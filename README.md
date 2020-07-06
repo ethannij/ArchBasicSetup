@@ -41,3 +41,12 @@ If the file is empty, type `$ zsh` into the terminal and run the configuration.
 `source ~/zshrc` to apply changes.
 
 #PowerLevel10k
+Start by downloading PowerLevel10k for ohmyzsh
+`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k`
+
+In ~/.zshrc
+replace `ZSH_THEME="robbyrussell"`
+with `ZSH_THEME="powerlevel10k/powerlevel10k"`
+`source ~/.zshrc`
+type `p10k configure` into your command line
+if there are graphical errors with the symbols, install the provided `p10k fonts`
