@@ -17,7 +17,7 @@ with PKGEXT='.pkg.tar' SRCEXT='.src.tar'
 
 #ZSH
 Install ZSH. Wget is for the plugins.
-`# pacman -S get wget zsh`
+`# pacman -S git wget zsh`
 
 Install OhMyZsh and the 'syntax highlighitng' and 'autosuggestions' plugins.
 `sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
