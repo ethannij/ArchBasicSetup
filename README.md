@@ -68,6 +68,9 @@ install spicetify
 install spicetify themes
 `cd spicetify-themes
 cp -r * ~/.config/spicetify/Themes`
+set your permissions
+`sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R`
 applying the theme
 `cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"` |
 `cp dribbblish.js ../../Extensions` |
