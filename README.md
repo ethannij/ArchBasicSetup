@@ -50,3 +50,7 @@ with `ZSH_THEME="powerlevel10k/powerlevel10k"`
 `source ~/.zshrc`
 type `p10k configure` into your command line
 if there are graphical errors with the symbols, install the provided `p10k fonts`
+
+#Alacritty
+replace `~/.config/alacritty`
+with the `alacritty` folder provided.
