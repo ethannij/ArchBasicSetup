@@ -2,6 +2,9 @@
 The way I install and configure my Arch Linux
 
 #Installing Arch
+edit `/etc/makepkg.conf` 
+replace PKGEXT='.pkg.tar.xz' SRCEXT='.src.tar.gz'
+with PKGEXT='.pkg.tar' SRCEXT='.src.tar'
 
 #Downloading Programs
 -Alacritty
@@ -54,3 +57,21 @@ if there are graphical errors with the symbols, install the provided `p10k fonts
 #Alacritty
 replace `~/.config/alacritty`
 with the `alacritty` folder provided.
+
+#Spotify
+Download spotify from the AUR
+`$ gpg --recv-key ${keyfromerror}`
+You must log into spotify in order for this to work
+`git clone https://aur.archlinux.org/spicetify-cli.git`
+install spicetify
+`git clone https://aur.archlinux.org/spicetify-themes-git.git`
+install spicetify themes
+`cd spicetify-themes
+cp -r * ~/.config/spicetify/Themes`
+applying the theme
+`cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+cp dribbblish.js ../../Extensions
+spicetify config extensions dribbblish.js
+spicetify config current_theme Dribbblish color_scheme Dracula
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+spicetify apply`
