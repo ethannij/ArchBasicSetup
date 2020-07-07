@@ -1,7 +1,6 @@
-# ArchBasicSetup
-The way I install and configure my Arch Linux
-
-#Installing Arch  
+The Way I Theme Arch Linux  
+  
+#Configuring Arch  
 -edit `/etc/makepkg.conf`  
 -replace PKGEXT='.pkg.tar.xz' SRCEXT='.src.tar.gz'  
 -with PKGEXT='.pkg.tar' SRCEXT='.src.tar'  
