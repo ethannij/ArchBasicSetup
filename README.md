@@ -2,9 +2,13 @@
   
 **#Configuring Arch**  
 -edit `/etc/makepkg.conf`  
+#PACKAGE OUTPUT  
+include:  
+COMPRESSZST=(zstd -c -T0 --ultra -20 -)  
+#EXTENSION DEFUALTS  
 -replace PKGEXT='.pkg.tar.xz' SRCEXT='.src.tar.gz'  
--with PKGEXT='.pkg.tar' SRCEXT='.src.tar'  
-
+-with PKGEXT='.pkg.tar.zst' SRCEXT='.src.tar.zst'  
+  
 **#Downloading Programs**  
 -Alacritty  
 -Spotify  
