@@ -14,6 +14,9 @@ with PKGEXT='.pkg.tar' SRCEXT='.src.tar'
 -OhMyZsh
 -Zsh
 -PowerLevel10k
+-BetterDiscord
+-KDE Plasma
+-Kvantum
 
 #ZSH
 Install ZSH. Wget is for the plugins.
@@ -78,3 +81,22 @@ applying the theme
 `spicetify config current_theme Dribbblish color_scheme Dracula` |
 `spicetify config inject_css 1 replace_colors 1 overwrite_assets 1` |
 `spicetify apply`
+
+#BetterDiscord
+`$ curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl`
+`$ chmod +x betterdiscordctl`
+`$ sudo mv betterdiscordctl /usr/local/bin`
+`$ sudo betterdiscordctl upgrade`
+`$ betterdiscordctl install`
+replace ~/.config/betterdiscord with the folder provided
+
+#KDEPlasma
+Load Kvantum theme "KvGlass" - use defualts
+Theme: Sweet
+Plasma Style: Sweet
+Applicatoin Style: Breeze
+Window Decoration: Sweet KDE Transparent
+Fonts: defaults +2
+Icons: Candy Icons
+Cursors: Sweet Cursors
+Desktop Background: *Provided*
