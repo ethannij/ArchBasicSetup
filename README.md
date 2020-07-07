@@ -1,11 +1,11 @@
-The Way I Theme Arch Linux  
+**The Way I Theme Arch Linux**  
   
-#Configuring Arch  
+**#Configuring Arch**  
 -edit `/etc/makepkg.conf`  
 -replace PKGEXT='.pkg.tar.xz' SRCEXT='.src.tar.gz'  
 -with PKGEXT='.pkg.tar' SRCEXT='.src.tar'  
 
-#Downloading Programs  
+**#Downloading Programs**  
 -Alacritty  
 -Spotify  
 -Firefox  
@@ -17,7 +17,7 @@ The Way I Theme Arch Linux
 -KDE Plasma  
 -Kvantum  
   
-#ZSH  
+**#ZSH**  
 Install ZSH. Wget is for the plugins.  
 `# pacman -S git wget zsh`  
   
@@ -48,7 +48,7 @@ If the file is empty, type `$ zsh` into the terminal and run the configuration.
   
 `source ~/zshrc` to apply changes.  
   
-#PowerLevel10k  
+**#PowerLevel10k**  
 Start by downloading PowerLevel10k for ohmyzsh  
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k`  
   
@@ -59,11 +59,11 @@ with `ZSH_THEME="powerlevel10k/powerlevel10k"`
 type `p10k configure` into your command line  
 if there are graphical errors with the symbols, install the provided `p10k fonts`  
   
-#Alacritty  
+**#Alacritty**  
 replace `~/.config/alacritty`  
 with the `alacritty` folder provided.  
   
-#Spotify  
+**#Spotify**  
 Download spotify from the AUR  
 `$ gpg --recv-key ${keyfromerror}`  
 You must log into spotify in order for this to work  
@@ -84,7 +84,7 @@ applying the theme
 `spicetify config inject_css 1 replace_colors 1 overwrite_assets 1` |  
 `spicetify apply`  
   
-#BetterDiscord  
+**#BetterDiscord**  
 `curl -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl`  
 `chmod +x betterdiscordctl`  
 `sudo mv betterdiscordctl /usr/local/bin`  
@@ -92,7 +92,7 @@ applying the theme
 `betterdiscordctl install`  
 replace ~/.config/betterdiscord with the folder provided  
   
-#KDEPlasma  
+**#KDEPlasma**  
 -Load Kvantum theme "KvGlass" - use defualts  
 -Theme: Sweet  
 -Plasma Style: Sweet  
